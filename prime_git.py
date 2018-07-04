@@ -1,6 +1,12 @@
 # simple demo script to test an integer for the prime property
 
 # This file is for our gitdemo repository.
+
+#History
+#*******
+#
+#04/07/2018: Bug fix for square numbers
+
 import numpy as np
 
 def is_prime(n):
@@ -14,7 +20,7 @@ def is_prime(n):
     if n != 2 and n%2 == 0:
         return False
     else:
-        for i in range(3, int(np.sqrt(n))):
+        for i in range(3, int(np.sqrt(n) + 1)):
             if n%i == 0:
                 return False
 
